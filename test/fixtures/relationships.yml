@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+one:
+  follower: gaurav
+  followed: shailesh
+
+two:
+  follower: gaurav
+  followed: aryann
+
+three:
+  follower: shailesh
+  followed: gaurav
+
+four:
+  follower: nikhil
+  followed: gaurav
