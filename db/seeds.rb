@@ -24,3 +24,9 @@ User.create!( name: "Example user",
                 activated: true, 
                 activated_at: Time.zone.now)
 end
+
+users = User.order(:created_at).take(6)
+50.times do
+  content = 'Lorem ipsum dolor sit amet, faucibus eget scelerisque'
+  users.each { |user| user.microposts.create!(content: content) }
+end

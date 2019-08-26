@@ -35,6 +35,9 @@ gem 'bcrypt', '~> 3.1.7'
 # For Pagination Purpose
 gem 'will_paginate',  '3.1.6'
 gem 'bootstrap-will_paginate',  '1.0.0' 
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
+gem 'faker',                   '1.7.3'
 
 
 # Use Capistrano for deployment
@@ -47,8 +50,6 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'rails-controller-testing'
-  # To generate Random Fake Users
-  gem 'faker'
 end
 
 group :development do
@@ -58,6 +59,11 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do
+gem 'pg',  '0.20.0'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
