@@ -12,3 +12,21 @@ gaurav:
   name: Gaurav Rawal
   email: gaurav.rawal66@gmail.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+nikhil:
+  name: Nikhil Sharma
+  email: nikhil722sharma@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+shailesh:
+  name: Shailesh Sharma
+  email: ssshailesh3@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>

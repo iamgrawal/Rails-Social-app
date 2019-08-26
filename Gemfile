@@ -32,6 +32,10 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# For Pagination Purpose
+gem 'will_paginate',  '3.1.6'
+gem 'bootstrap-will_paginate',  '1.0.0' 
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -43,6 +47,8 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'rails-controller-testing'
+  # To generate Random Fake Users
+  gem 'faker'
 end
 
 group :development do
